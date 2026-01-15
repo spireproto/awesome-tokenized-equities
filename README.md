@@ -21,3 +21,17 @@ today**, not how good it is.
 | **[research]** | Written work, no implementation claimed |
 
 ## Contents
+
+- [Where do I start?](#where-do-i-start)
+- [Issuers](#issuers)
+- [Standards](#standards)
+- [Chains](#chains)
+- [Corporate actions](#corporate-actions)
+- [Tooling](#tooling)
+- [Data and explorers](#data-and-explorers)
+- [Research](#research)
+- [Contributing](#contributing)
+
+## Where do I start?
+
+Three steps, in order, if the subject is new to you.
