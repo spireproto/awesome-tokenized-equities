@@ -12,3 +12,12 @@ organised so those differences are visible rather than flattened.
 
 Every entry carries one. They describe **how much of the thing is load-bearing
 today**, not how good it is.
+
+| Tag | Meaning |
+| --- | ------- |
+| **[production]** | Live with real assets, real users, public track record |
+| **[beta]** | Live, limited scope or limited jurisdictions |
+| **[experimental]** | Testnet, prototype, or spec ahead of implementation |
+| **[research]** | Written work, no implementation claimed |
+
+## Contents
