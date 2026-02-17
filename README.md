@@ -35,3 +35,16 @@ today**, not how good it is.
 ## Where do I start?
 
 Three steps, in order, if the subject is new to you.
+
+1. **Understand that "tokenized share" is not one thing.** Read
+   [Corporate actions](#corporate-actions) first. The dividend method is what
+   actually distinguishes these products, and it is the part marketing pages omit.
+2. **Pick one issuer and find its real contract.** Not by ticker: by bytecode.
+   [erc8056-checks](https://github.com/usestockledger/erc8056-checks) does it for
+   Robinhood Chain in one command, and the exercise is more instructive than any
+   overview.
+3. **Replay a corporate action yourself.** One `eth_getLogs` returns the entire
+   history of chain 4663. Fifteen events. Read them absolutely, then read them as
+   compounded deltas, and note that the answers differ.
+
+## Issuers
