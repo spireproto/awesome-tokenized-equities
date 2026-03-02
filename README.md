@@ -48,3 +48,16 @@ Three steps, in order, if the subject is new to you.
    compounded deltas, and note that the answers differ.
 
 ## Issuers
+
+- **[production]** [Robinhood Chain Stock Tokens](https://robinhoodchain.blockscout.com) - tokenized US equities on chain 4663. Corporate actions through an ERC-8056 multiplier: raw balances stay static, the shares-per-token ratio moves. 194 genuine wrappers by bytecode as of August 2026.
+- **[production]** [Backed / xStocks](https://backed.fi) - collateralised tracker certificates on Solana and EVM chains. Dividends handled by rebase, net of US withholding.
+- **[production]** [Dinari](https://dinari.com) - SEC-registered transfer agent issuing dShares. Dividends paid in USDC rather than accrued, which makes them the easiest of the three to reconcile.
+- **[beta]** [Ondo Global Markets](https://ondo.finance) - tokenized equities and ETFs with a broker-dealer wrapper.
+- **[beta]** [Swarm](https://swarm.com) - regulated tokenized stocks and bonds, BaFin-licensed venue.
+
+## Standards
+
+- **[production]** [ERC-8056 Scaled UI Amount](https://eips.ethereum.org/) - a multiplier adjusts displayed amounts while `balanceOf` and `totalSupply` stay fixed. Explicitly not a rebase; integrators opt in. The design chain 4663 uses.
+- **[production]** [ERC-1400 Security Token Standard](https://github.com/ethereum/EIPs/issues/1411) - partitioned balances plus transfer restrictions. The older, permissioning-first approach.
+- **[production]** [ERC-3643 (T-REX)](https://www.erc3643.org) - on-chain identity and compliance for permissioned securities.
+- **[experimental]** [ERC-7726 / oracle composition notes](https://eips.ethereum.org/) - relevant because applying a UI multiplier on top of a price that already includes it is the most common integration bug in this category.
