@@ -61,3 +61,9 @@ Three steps, in order, if the subject is new to you.
 - **[production]** [ERC-1400 Security Token Standard](https://github.com/ethereum/EIPs/issues/1411) - partitioned balances plus transfer restrictions. The older, permissioning-first approach.
 - **[production]** [ERC-3643 (T-REX)](https://www.erc3643.org) - on-chain identity and compliance for permissioned securities.
 - **[experimental]** [ERC-7726 / oracle composition notes](https://eips.ethereum.org/) - relevant because applying a UI multiplier on top of a price that already includes it is the most common integration bug in this category.
+
+## Chains
+
+- **[production]** [Robinhood Chain](https://robinhoodchain.blockscout.com) - chain id 4663, block 1 dated 30 April 2026. Purpose-built for the issuer's stock tokens.
+- **[production]** [Solana](https://solana.com) - where xStocks has the deepest tokenized-equity liquidity.
+- **[production]** [Base](https://base.org) - Dinari dShares and several ETF wrappers.
