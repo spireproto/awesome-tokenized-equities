@@ -67,3 +67,7 @@ Three steps, in order, if the subject is new to you.
 - **[production]** [Robinhood Chain](https://robinhoodchain.blockscout.com) - chain id 4663, block 1 dated 30 April 2026. Purpose-built for the issuer's stock tokens.
 - **[production]** [Solana](https://solana.com) - where xStocks has the deepest tokenized-equity liquidity.
 - **[production]** [Base](https://base.org) - Dinari dShares and several ETF wrappers.
+
+## Corporate actions
+
+The part that actually differs between products.
