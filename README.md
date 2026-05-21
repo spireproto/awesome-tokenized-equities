@@ -71,3 +71,15 @@ Three steps, in order, if the subject is new to you.
 ## Corporate actions
 
 The part that actually differs between products.
+
+| Issuer | Dividend method | Holder sees | Reconcilable from chain alone |
+| ------ | --------------- | ----------- | ----------------------------- |
+| Robinhood | Multiplier accrual | Balance unchanged, ratio rises | Partially: the log exists, the entitlement record does not |
+| xStocks / Backed | Rebase, net of 30% withholding | Balance rises | Partially |
+| Dinari | USDC payment | Stablecoin arrives | Yes, it is a transfer |
+
+- **[production]** [Stock Ledger register](https://github.com/usestockledger/stock-ledger) - the corporate-action register of record for chain 4663: contract map, event register with duplicate and reversal flags, holder snapshot, distribution rail.
+- **[production]** [erc8056-checks](https://github.com/usestockledger/erc8056-checks) - five zero-dependency scripts that reproduce every published claim about chain 4663. Start here if you want to check somebody's numbers, including ours.
+- **[research]** [Holder of record, in plain terms](https://github.com/usestockledger/stock-ledger/blob/main/docs/overview.md) - why the register is kept twice, and what was dropped when equities moved on chain.
+
+## Tooling
