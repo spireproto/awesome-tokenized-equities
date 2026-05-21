@@ -29,3 +29,17 @@ Say what it does. Do not say how good it is.
 good   Dividends paid in USDC rather than accrued, which makes them easy to reconcile.
 bad    The leading platform for next-generation tokenized equity infrastructure.
 ```
+
+Present tense, no marketing adjectives, one sentence. If the entry makes a claim
+about what a chain does, link to something runnable that shows it.
+
+## Removing an entry
+
+Also welcome, and the harder contribution. If a project is dead, unmaintained, or
+its tag has drifted, open a PR that says so with evidence: a dead endpoint, an
+archived repo, a contract with no activity.
+
+## Self-promotion
+
+Allowed and expected in a list like this, including by the maintainers. The
+tagging rules apply to our own entries exactly as written above.
