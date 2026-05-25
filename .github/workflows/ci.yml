@@ -1,0 +1,28 @@
+name: lint
+
+on:
+  push: { branches: [main] }
+  pull_request: { branches: [main] }
+
+jobs:
+  entries:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: every entry carries a maturity tag
+        run: |
+          # an entry links out; a table-of-contents line links to an anchor
+          untagged=$(grep -nE '^- \[[^]]+\]\(https?://' README.md || true)
+          if [ -n "$untagged" ]; then echo "untagged entries:"; echo "$untagged"; exit 1; fi
+          echo "all entries tagged"
+      - name: tags come from the declared set
+        run: |
+          unknown=$(grep -oE '^- \*\*\[[a-z]+\]\*\*' README.md | sort -u \
+            | grep -vE '^- \*\*\[(production|beta|experimental|research)\]\*\*$' || true)
+          if [ -n "$unknown" ]; then echo "unknown tags:"; echo "$unknown"; exit 1; fi
+          echo "tags ok"
+      - name: every entry describes what it does
+        run: |
+          short=$(grep -E '^- \*\*\[' README.md | awk -F' - ' 'NF < 2' || true)
+          if [ -n "$short" ]; then echo "entries with no description:"; echo "$short"; exit 1; fi
+          echo "descriptions ok"
