@@ -90,3 +90,12 @@ The part that actually differs between products.
 - **[production]** [Foundry](https://github.com/foundry-rs/foundry) - the toolchain most of this ecosystem builds and tests with.
 
 ## Data and explorers
+
+- **[production]** [Robinhood Chain Blockscout](https://robinhoodchain.blockscout.com) - token search, holder lists, verified sources. Search by ticker and note how many contracts come back.
+- **[production]** [corporate-actions-log](https://github.com/usestockledger/corporate-actions-log) - append-only daily sweep of every corporate action on chain 4663.
+
+## Research
+
+- **[research]** [Methodology: every claim and the call that produces it](https://github.com/usestockledger/stock-ledger/blob/main/docs/methodology.md) - including an explicit list of what is *not* measured.
+- **[research]** [Who pays for the dividend in an AMM](https://github.com/usestockledger/stock-ledger/blob/main/docs/pools.md) - derived from the mechanism and labelled as such, with the experiment that would settle it.
+- **[research]** [Ticker collision on chain 4663](https://github.com/usestockledger/stock-ledger/blob/main/docs/identity.md) - 1127 contracts answer to `AAPL`; one is real.
