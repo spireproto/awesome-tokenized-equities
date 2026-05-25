@@ -83,3 +83,10 @@ The part that actually differs between products.
 - **[research]** [Holder of record, in plain terms](https://github.com/usestockledger/stock-ledger/blob/main/docs/overview.md) - why the register is kept twice, and what was dropped when equities moved on chain.
 
 ## Tooling
+
+- **[production]** [@stockledger/core](https://github.com/usestockledger/ledger-core) - identity, register, snapshot and allocation as pure BigInt arithmetic. No transport, no keys.
+- **[production]** [@stockledger/sdk](https://github.com/usestockledger/ledger-sdk) - resolve a ticker to its real contract and replay the register off public RPC.
+- **[experimental]** [ledger-contracts](https://github.com/usestockledger/ledger-contracts) - on-chain interfaces for the registry, register, snapshot and distributor. Nothing deployed.
+- **[production]** [Foundry](https://github.com/foundry-rs/foundry) - the toolchain most of this ecosystem builds and tests with.
+
+## Data and explorers
