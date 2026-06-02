@@ -99,3 +99,7 @@ The part that actually differs between products.
 - **[research]** [Methodology: every claim and the call that produces it](https://github.com/usestockledger/stock-ledger/blob/main/docs/methodology.md) - including an explicit list of what is *not* measured.
 - **[research]** [Who pays for the dividend in an AMM](https://github.com/usestockledger/stock-ledger/blob/main/docs/pools.md) - derived from the mechanism and labelled as such, with the experiment that would settle it.
 - **[research]** [Ticker collision on chain 4663](https://github.com/usestockledger/stock-ledger/blob/main/docs/identity.md) - 1127 contracts answer to `AAPL`; one is real.
+
+## Contributing
+
+Pull requests welcome. Two rules:
