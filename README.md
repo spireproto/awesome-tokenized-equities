@@ -103,3 +103,12 @@ The part that actually differs between products.
 ## Contributing
 
 Pull requests welcome. Two rules:
+
+1. **Every entry carries a maturity tag**, and the tag has to be defensible. If
+   the product is a landing page and a waitlist, it is `[experimental]`.
+2. **Describe what it does, not how good it is.** "Dividends paid in USDC" is
+   useful. "The leading platform for" is not.
+
+Entries that make a factual claim about a chain should link to something runnable.
+
+## License
