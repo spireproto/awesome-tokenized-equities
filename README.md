@@ -112,3 +112,7 @@ Pull requests welcome. Two rules:
 Entries that make a factual claim about a chain should link to something runnable.
 
 ## License
+
+[![CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/)
+
+Maintained by [Stock Ledger](https://github.com/usestockledger).
