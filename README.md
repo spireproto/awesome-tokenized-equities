@@ -53,7 +53,6 @@ Three steps, in order, if the subject is new to you.
 - **[production]** [Backed / xStocks](https://backed.fi) - collateralised tracker certificates on Solana and EVM chains. Dividends handled by rebase, net of US withholding.
 - **[production]** [Dinari](https://dinari.com) - SEC-registered transfer agent issuing dShares. Dividends paid in USDC rather than accrued, which makes them the easiest of the three to reconcile.
 - **[beta]** [Ondo Global Markets](https://ondo.finance) - tokenized equities and ETFs with a broker-dealer wrapper.
-- **[beta]** [Swarm](https://swarm.com) - regulated tokenized stocks and bonds, BaFin-licensed venue.
 
 ## Standards
 
