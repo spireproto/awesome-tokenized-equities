@@ -27,6 +27,7 @@ today**, not how good it is.
 - [Standards](#standards)
 - [Chains](#chains)
 - [Corporate actions](#corporate-actions)
+- [Clearing and settlement](#clearing-and-settlement)
 - [Tooling](#tooling)
 - [Data and explorers](#data-and-explorers)
 - [Research](#research)
@@ -80,6 +81,19 @@ The part that actually differs between products.
 - **[production]** [Stock Ledger register](https://github.com/usestockledger/stock-ledger) - the corporate-action register of record for chain 4663: contract map, event register with duplicate and reversal flags, holder snapshot, distribution rail.
 - **[production]** [erc8056-checks](https://github.com/usestockledger/erc8056-checks) - five zero-dependency scripts that reproduce every published claim about chain 4663. Start here if you want to check somebody's numbers, including ours.
 - **[research]** [Holder of record, in plain terms](https://github.com/usestockledger/stock-ledger/blob/main/docs/overview.md) - why the register is kept twice, and what was dropped when equities moved on chain.
+
+## Clearing and settlement
+
+Tokenized equities settle by prefunding: the asset and the cash are both in place
+before the trade, so nothing is ever owed. It works, and it is paid for in capital
+that has to sit still. This section is for the work on the alternative.
+
+- **[experimental]** [Spire Protocol](https://github.com/spireproto/spire) - clearing layer for chain 4663: novation, netting inside a 300s window across venues, collateral instead of prefunding, and a default waterfall fixed in advance. Specification complete, nothing deployed.
+- **[experimental]** [spire-contracts](https://github.com/spireproto/spire-contracts) - clearing house, collateral vault, settlement engine, default fund, solvency registry and governor as interfaces, published ahead of the implementation.
+- **[production]** [spire-checks](https://github.com/spireproto/spire-checks) - zero-dependency scripts that measure chain 4663 and check published parameters against it, including ours.
+- **[research]** [netting-replay](https://github.com/spireproto/netting-replay) - 33 modelled trading days through those netting rules. Compression ranges from 8.3% to 47.8%, which is the point: it is a property of flow, not of a protocol.
+- **[research]** [Prefunding, and what it actually costs](https://github.com/spireproto/spire/blob/main/docs/overview.md) - why a market maker's capital requirement is the cartesian product of the venues it quotes on rather than its net risk.
+- **[research]** [CPMI-IOSCO Principles for Financial Market Infrastructures](https://www.bis.org/cpmi/publ/d101.htm) - the document every off-chain clearing house is built against. Principles 4, 7 and 13 are the ones an on-chain design has to answer.
 
 ## Tooling
 
